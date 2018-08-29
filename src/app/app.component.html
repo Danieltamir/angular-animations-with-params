@@ -1,0 +1,44 @@
+<div class="description-header">
+    Angular Animations
+</div>
+<div class="highlighted-text">Pop over animation</div>
+<br>
+<div class="row">
+    <button class="col-md-4 btn btn-primary" (click)="toggleEaseInOut()">Toggle PopOver</button>
+    <div class="col-md-10" [@popOverState]="showPopOver">
+        <p>Hello! I'm a helpful pop over message.</p>
+    </div>
+</div>
+<div class="highlighted-text">Slide right animation that takes the font size as parameter</div>
+<br>
+<div class="row">
+    <button class="btn btn-primary" (click)="toggleSlide()">Toggle PopOver</button>
+    <div class="col-md-16" [@slideInOut]="{value: slideAnimationParam, params: {fontSize: 2}}">
+        <p>Slide animation with parameter is active! :O</p>
+    </div>
+</div>
+<br>
+<div class="highlighted-text">List animation - animating ngFor loop with :enter and :leave of the elements.</div>
+<br>
+<div class="row">
+    <button class="col-md-4 btn btn-primary" (click)="toggleListAnimation()">Show / Hide Items</button>
+    <div class="col-md-10" [@listAnimation]="items.length">
+        <div class="list-item" *ngFor="let item of items">
+            <div>{{ item }}</div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="highlighted-text">List animation - animating ngFor loop with :enter and :leave of the elements with
+    keyframes.
+</div>
+<br>
+<div class="row">
+    <button class="col-md-4 btn btn-primary" (click)="toggleListKeyframesAnimation()">Show / Hide Items</button>
+    <div class="col-md-10" [@listKeyframesAnimation]="keyframesItems.length">
+        <div class="list-item" *ngFor="let item of keyframesItems">
+            <div>{{ item }}</div>
+        </div>
+    </div>
+</div>
+
