@@ -1,8 +1,11 @@
 # AngularAnimationsWithParams
 
-In this project you can find angular animations examples such as:
+## In this project you can find angular animations examples such as:
+
 1.Simple pop over animations with toggle state.
+
 2.Animations with parameters for better constructuring your animation.
+
 3.Animations on ngFor lists with and without keyframes.
 
 ## Development server
